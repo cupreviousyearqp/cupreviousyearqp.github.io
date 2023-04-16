@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <HTML>
+    <HEAD>
+      <META name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <TITLE>Calicut University Previous Year Question Paper</TITLE>
+      <LINK rel="stylesheet" href="style.css"/>
+      <LINK rel="icon" href="images/logo.png"/>
+      <LINK rel="preconnect" href="https://fonts.googleapis.com"/><!--These 3 links are copied from google fonts-->
+      <LINK rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <LINK href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"/>
+      <LINK rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/><!--Imported from bootstrapcdn. Not really, you pulled this out from a random stack overflow site that you will never remeber again :0-->
+    </HEAD>
+    <BODY>
+      <SECTION class="header">
+        <DIV class="text-box">
+          <H1>Calicut University Previous Year Question Papers</H1>
+          <A href="#collapse" class="hero-btn">Browse Question Papers</A>
+        </DIV>
+      </SECTION>
+
+      <!--Main-->
+      <SECTION class="main">
+        <DIV class="main-div">
+          <H3>SUBJECTS</H3>
+          <I class="fa fa-caret-down" onclick="showMenu()" id="collapse"></I>
+        </DIV>
+
+        <DIV class="dropdown" id="dropdown">
+          <UL>
+            <LI><A href="dbms.pdf" target="display">Mathematics</A></LI>
+            <LI><A href="dbms.pdf" target="display">English</A></LI>
+            <LI><A href="dbms.pdf" target="display">Hindi</A></LI>
+            <LI><A href="test.pdf" target="display">Computer</A></LI>
+          </UL>
+        </DIV>
+
+        <DIV class="display">
+          <IFRAME name="display" src="intro_page.html"></IFRAME>
+        </DIV>
+      </SECTION>
+
+      <!--Footer-->
+      <SECTION class="footer">
+        <H4>About Us</H4>
+        <P>Created by the people for the people.</P>
+
+           <DIV class="icons">
+             <I class="fa fa-facebook"></I>
+             <I class="fa fa-twitter"></I>
+             <I class="fa fa-instagram"></I>
+             <I class="fa fa-linkedin"></I>
+           </DIV>
+      </SECTION>
+
+      <SCRIPT>
+        var dropD= document.getElementById("dropdown");
+
+        function showMenu(){
+          if(dropD.style.visibility== "collapse")
+          {
+            dropD.style.visibility= "visible";
+            dropD.style.transition= "0.5s";
+            dropD.style.opacity= "1.0";
+          }
+
+          else
+          {
+            dropD.style.visibility= "collapse";
+            dropD.style.transition= "0.5s";
+            dropD.style.opacity= "0";
+          }
+        }
+      </SCRIPT>
+    </BODY>
+  </HTML>
