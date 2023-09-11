@@ -99,6 +99,22 @@
   border: 2px solid black;
   margin: 50px;
   transition: 0.25s;
+  border-radius: 25px;
+}
+
+.main a{
+  text-decoration: none;
+  color: #000;
+}
+
+.main a:visited{
+  text-decoration: none;
+  color: #000;
+}
+
+.main a:hover{
+  text-decoration: none;
+  color: #000;
 }
 
 #sem-item-7th, #sem-item-8th{
