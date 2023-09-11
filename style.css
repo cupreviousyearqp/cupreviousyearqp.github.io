@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*header*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+  width: 90%;
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box{
+  font-size: 50px;
+}
+
+.text-box p{
+  margin: 10px 0 48px;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid #FFF;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  border: 1px solid #F44336;
+  background: #FA6520;
+  transition: 0.5s;
+}
+
+/*main*/
+.main{
+  background-color: #FFECd4;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.dropdown{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.dropdown select{
+  text-align: center;
+  border: 2px solid #FA6520;
+  margin: 10px 0px 20px 0px;
+  width: 930px;
+  border-radius: 10px;
+  background-color: #FFF8F0;
+  z-index: 2;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.semester{
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  margin-bottom: -700px;
+  transition: 0.5s;
+}
+
+.sem-container{
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: repeat(4, 500px);
+  padding-bottom: 300px;
+  text-align: center;
+}
+
+.sem-item{
+  border: 2px solid black;
+  margin: 50px;
+  transition: 0.25s;
+}
+
+#sem-item-7th, #sem-item-8th{
+  opacity: 0;
+}
+
+/*footer*/
+.footer{
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa{
+  color: #FA6520;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
