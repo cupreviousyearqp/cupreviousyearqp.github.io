@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*header*/
 .header{
     min-height: 100vh;
     width: 100%;
@@ -11,17 +12,6 @@
     background-position: center;
     background-size: cover;
     position: relative;
-}
-
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2% 6%;
-}
-
-nav img{
-  width: 150px;
 }
 
 .text-box{
@@ -35,7 +25,7 @@ nav img{
 }
 
 .text-box{
-  font-size: 62px;
+  font-size: 50px;
 }
 
 .text-box p{
@@ -62,55 +52,22 @@ nav img{
   transition: 0.5s;
 }
 
+/*main*/
 .main{
-  background-color: #ffecd4;
-}
-
-.main-div{
+  background-color: #FFECd4;
+  padding: 100px;
   display: flex;
-  justify-content: center;
-}
-
-.main-div h3{
-  color: #424242;
-  display: inline;
-  border: 2px solid #FA6520;
-  padding: 5px 20%;
-  margin-top: 100px;
-  font-size: 25px;
-  border-radius: 10px;
-  background-color: #FFF8F0;
-}
-
-.main-div .fa{
-  display: inline;
-  color: #424242;
-  font-size: 300%;
-  border: 2px solid #FA6520;
-  padding: 0 2px;
-  margin-top: 100px;
-  margin-left: 2px;
-  border-radius: 8px;
-  transition: 0.5s;
-  cursor: pointer;
-  background-color: #FFF8F0;
-}
-
-.main-div .fa:hover{
-  background-color: #FA6520;
-  color: #FFF8F0;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .dropdown{
   display: flex;
   justify-content: center;
-  visibility: collapse;
-  z-index: 2;
+  padding-bottom: 200px;
 }
 
-.dropdown ul{
-  list-style-type: none;
-  display: inline-block;
+.dropdown select{
   text-align: center;
   border: 2px solid #FA6520;
   margin: 10px 0px 20px 0px;
@@ -118,28 +75,39 @@ nav img{
   border-radius: 10px;
   background-color: #FFF8F0;
   z-index: 2;
+  padding: 10px;
+  font-size: 20px;
 }
 
-.dropdown li{
-  border-bottom: 2px solid #FA6520;
-  padding: 5px 0px;
-  font-size: 18px;
-  z-index: 2;
+.semester{
+  display: flex;
+  justify-content: center;
+  transition: 1s;
 }
 
-.dropdown li:last-child{
-  border-bottom: 0px solid;
-  z-index: 2;
+.sem-container{
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: repeat(4, 500px);
+  padding-bottom: 300px;
+  text-align: center;
 }
 
-.dropdown li a{
-  text-decoration: none;
-  color: black;
+.sem-item{
+  border: 2px solid black;
+  margin: 50px;
+}
+
+#container-cover{
+    display: block;
+    background-color: red;
+    position: 
 }
 
 .display{
   display: flex;
   justify-content: center;
+  margin: 500px;
 }
 
 .display iframe{
@@ -149,7 +117,7 @@ nav img{
   height: 1080px;
 }
 
-/*Footer*/
+/*footer*/
 .footer{
   text-align: center;
   width: 100%;
