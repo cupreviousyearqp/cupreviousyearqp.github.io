@@ -83,6 +83,8 @@
   display: flex;
   justify-content: center;
   transition: 1s;
+  margin-bottom: -700px;
+  transition: 0.5s;
 }
 
 .sem-container{
@@ -96,25 +98,11 @@
 .sem-item{
   border: 2px solid black;
   margin: 50px;
+  transition: 0.25s;
 }
 
-#container-cover{
-    display: block;
-    background-color: red;
-    position:
-}
-
-.display{
-  display: flex;
-  justify-content: center;
-  margin: 500px;
-}
-
-.display iframe{
-  margin-top: -100px;
-  margin-bottom: 50px;
-  width: 720px;
-  height: 1080px;
+#sem-item-7th, #sem-item-8th{
+  opacity: 0;
 }
 
 /*footer*/
