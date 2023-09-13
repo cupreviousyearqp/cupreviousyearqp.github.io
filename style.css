@@ -50,6 +50,8 @@
   border: 1px solid #F44336;
   background: #FA6520;
   transition: 0.5s;
+  text-decoration: none;
+  color: #FFF;
 }
 
 /*main*/
@@ -82,12 +84,30 @@
 .semester{
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
-  opacity: 0;
+  padding-bottom: -100px;
   transition: 1s;
 }
 
 .semester select{
+  text-align: center;
+  border: 2px solid #FA6520;
+  margin: 10px 0px 20px 0px;
+  width: 930px;
+  border-radius: 10px;
+  background-color: #FFF8F0;
+  z-index: 2;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.subject{
+  display: flex;
+  justify-content: center;
+  padding-bottom: -100px;
+  transition: 1s;
+}
+
+.subject select{
   text-align: center;
   border: 2px solid #FA6520;
   margin: 10px 0px 20px 0px;
