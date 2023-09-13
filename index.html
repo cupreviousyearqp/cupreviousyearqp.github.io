@@ -16,14 +16,14 @@
       <SECTION class="header">
         <DIV class="text-box">
           <H1>Calicut University Previous Year Question Papers</H1>
-          <A href="#selectBox" class="hero-btn">Browse Question Papers</A>
+          <A href="#courseSelectBox" class="hero-btn">Browse Question Papers</A>
         </DIV>
       </SECTION>
 
       <!--Main-->
       <SECTION class="main">
-        <DIV class="dropdown">
-          <SELECT  id="selectBox" onchange="changeSemesterGuide()">
+        <DIV class="dropdown" id="dropdown">
+          <SELECT  id="courseSelectBox" onchange="changeSemesterGuide()">
             <OPTION value="BA">BA ENGLISH LANGUAGE AND LITERATURE</OPTION>
             <OPTION value="BBA">BACHELOR OF BUSINESS ADMINISTRATION</OPTION>
             <OPTION value="BCA">BACHELOR OF COMPUTER APPLICATION</OPTION>
@@ -35,16 +35,17 @@
         </DIV>
 
         <DIV class="semester" id="semester">
-          <DIV class="sem-container">
-            <DIV class="sem-item"><A id="link-1" href="semester_pages\ba\sem1.html">Semester 1</A></DIV>
-            <DIV class="sem-item"><A id="link-2" href="semester_pages\ba\sem2.html">Semester 2</A></DIV>
-            <DIV class="sem-item"><A id="link-3" href="semester_pages\ba\sem3.html">Semester 3</A></DIV>
-            <DIV class="sem-item"><A id="link-4" href="semester_pages\ba\sem4.html">Semester 4</A></DIV>
-            <DIV class="sem-item" id="sem-item-5th"><A id="link-5" href="semester_pages\ba\sem5.html">Semester 5</A></DIV>
-            <DIV class="sem-item" id="sem-item-6th"><A id="link-6" href="semester_pages\ba\sem6.html">Semester 6</A></DIV>
-          </DIV>
+          <SELECT id="semesterSelectBox">
+
+          </SELECT>
         </DIV>
 
+        <DIV class="subject" id="subject">
+          <SELECT id="semesterSelectBox">
+
+          </SELECT>
+        </DIV>
+      </SECTION>
       <!--Footer-->
       <SECTION class="footer">
         <H4>About Us</H4>
