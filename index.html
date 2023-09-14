@@ -1,7 +1,6 @@
 <!DOCTYPE html>
   <HTML>
     <HEAD>
-      <META name="viewport" content="width=device-width, initial-scale=1.0"/>
       <TITLE>Calicut University Previous Year Question Paper</TITLE>
       <LINK rel="stylesheet" href="style.css"/>
       <LINK rel="icon" href="images/logo.png"/>
@@ -37,8 +36,8 @@
           </DIV>
 
           <DIV class="semester" id="semester">
-              <SELECT id="niv1" data-child="niv2" class="selectdata form-control custom-select">
-                  <OPTION data-group="1-1" value="1-1-1" onclick="functionSub()">Semester 1</OPTION>
+              <SELECT id="niv1" data-child="niv2" class="selectdata form-control custom-select" disabled="true">
+                  <OPTION data-group="1-1" value="1-1-1" onclick="functionSub()" disabled="true">Semester 1</OPTION>
                   <OPTION data-group="1-1" value="1-1-2" onclick="functionSub()">Semester 2</OPTION>
                   <OPTION data-group="1-1" value="1-1-3" onclick="functionSub()">Semester 3</OPTION>
                   <OPTION data-group="1-1" value="1-1-4" onclick="functionSub()">Semester 4</OPTION>
@@ -85,7 +84,7 @@
                   <OPTION data-group="1-5" value="1-5-5" onclick="functionSub()">Semester 5</OPTION>
                   <OPTION data-group="1-5" value="1-5-6" onclick="functionSub()">Semester 6</OPTION>
                   <OPTION data-group="1-5" value="1-5-7" onclick="functionSub()">Languages</OPTION>
-                  <OPTION data-group="1-5" value="1-5-8" onclick="functionSub(); functionBcomSpec()">Courses in Specialization</OPTION>
+                  <OPTION data-group="1-5" value="1-5-8" onclick="functionSub('true')">Courses in Specialization</OPTION>
                   <OPTION data-group="1-5" value="1-5-9" onclick="functionSub()">Open Courses</OPTION>
 
 
@@ -104,14 +103,14 @@
 
           <DIV class="subject" id="subject">
               <SELECT id="niv2" data-child="niv3" class="selectdata form-control custom-select">
-                  <OPTION data-group="1-1-1" value="1-1-1-1">INTRODUCING LITERATURE</OPTION>
+                  <OPTION data-group="1-1-1" value="1-1-1-1" disabled="true">INTRODUCING LITERATURE</OPTION>
                   <OPTION data-group="1-1-2" value="1-1-2-1">APPRECIATING POETRY</OPTION>
                   <OPTION data-group="1-1-3" value="1-1-3-1">APPRECIATING PROSE</OPTION>
-                  <OPTION data-group="1-1-4" value="1-1-3-2">ENGLISH GRAMMAR AND USAGE</OPTION>
-                  <OPTION data-group="1-1-5" value="1-1-4-1">APPRECIATING FICTION</OPTION>
-                  <OPTION data-group="1-1-6" value="1-1-4-2">APPRECIATING DRAMA AND THEATRE</OPTION>
-                  <OPTION data-group="1-1-6" value="1-1-5-1">LITERARY THEORY</OPTION>
-                  <OPTION data-group="1-1-6" value="1-1-5-2">INDIAN WRITING IN ENGLISH</OPTION>
+                  <OPTION data-group="1-1-3" value="1-1-3-2">ENGLISH GRAMMAR AND USAGE</OPTION>
+                  <OPTION data-group="1-1-4" value="1-1-4-1">APPRECIATING FICTION</OPTION>
+                  <OPTION data-group="1-1-4" value="1-1-4-2">APPRECIATING DRAMA AND THEATRE</OPTION>
+                  <OPTION data-group="1-1-5" value="1-1-5-1">LITERARY THEORY</OPTION>
+                  <OPTION data-group="1-1-5" value="1-1-5-2">INDIAN WRITING IN ENGLISH</OPTION>
                   <OPTION data-group="1-1-6" value="1-1-6-1">VOICES OF WOMEN</OPTION>
                   <OPTION data-group="1-1-6" value="1-1-6-2">CLASSICS OF WORLD LITERATURE</OPTION>
                   <OPTION data-group="1-1-6" value="1-1-6-3">FILM STUDIES</OPTION>
@@ -127,8 +126,8 @@
                   <OPTION data-group="1-1-8" value="1-1-8-4">ASPECTS OF ORAL AND INTERPERSONAL COMMUNICATION</OPTION>
                   <OPTION data-group="1-1-8" value="1-1-8-5">ASPECTS OF READING AND WRITING</OPTION>
                   <OPTION data-group="1-1-9" value="1-1-9-1">ENGLISH FOR COMPETITIVE EXAMINATIONS</OPTION>
-                  <OPTION data-group="1-1-9" value="1-1-9-1">CREATIVE WRITING IN ENGLISH</OPTION>
-                  <OPTION data-group="1-1-9" value="1-1-9-1">APPRECIATING LITERATURE</OPTION>
+                  <OPTION data-group="1-1-9" value="1-1-9-2">CREATIVE WRITING IN ENGLISH</OPTION>
+                  <OPTION data-group="1-1-9" value="1-1-9-3">APPRECIATING LITERATURE</OPTION>
 
                   <OPTION data-group="1-2-1" value="1-2-1-1">Management Theory and Practices</OPTION>
                   <OPTION data-group="1-2-2" value="1-2-2-1">Financial Accounting</OPTION>
@@ -325,9 +324,9 @@
               </SELECT>
           </DIV>
 
-          <DIV class="bcom-specialization" id="bcom-specialization">
-              <SELECT id="niv3" class="selectdata form-control custom-select">
-                  <OPTION data-group="1-5-8-1" value="1-5-8-1-1">Financial Markets and Services</OPTION>
+          <DIV class="bcom-specialization" id="bcom-specialization" >
+              <SELECT id="niv3" class="selectdata form-control custom-select" disabled=true>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-1" >Financial Markets and Services</OPTION>
                   <OPTION data-group="1-5-8-1" value="1-5-8-1-2">Financial Management</OPTION>
                   <OPTION data-group="1-5-8-1" value="1-5-8-1-3">Fundamentals of Investments</OPTION>
                   <OPTION data-group="1-5-8-1" value="1-5-8-1-4">Financial Derivatives</OPTION>
@@ -355,6 +354,11 @@
           </DIV>
 
           <SCRIPT type="text/javascript">
+              document.getElementById("niv1").disabled = true;
+              document.getElementById("niv2").disabled = true;
+              document.getElementById("niv3").disabled = true;
+
+
               $("[data-child]").change(function() {
                 const selectedGroup = $(this).val();
                 var $childSelect = $("#" + $(this).attr("data-child"));
@@ -369,42 +373,45 @@
               $("[data-child]").eq(0).trigger('change');
 
               function functionSem(){
-                var dropdown = document.getElementById("dropdown");
-                var semester = document.getElementById("semester");
-                var BcomSpec = document.getElementById("bcom-specialization");
-
-                dropdown.style.paddingBottom = "50px";
-                semester.style.opacity = 1;
-                semester.style.paddingBottom = "50px";
-                if(BcomSpec.style.opacity == 1)
+                document.getElementById("niv1").disabled = false;
+                document.getElementById("semester").style.opacity = 1;
+                document.getElementById("semester").style.top = "12.5px"
+                if(document.getElementById("bcom-specialization").style.opacity == 1)
                 {
-                  BcomSpec.style.opacity = 0;
-                  BcomSpec.style.paddingBottom = "-50px";
+                  console.log("function executed");
+                  document.getElementById("niv3").disabled = true;
+                  document.getElementById("bcom-specialization").style.opacity = "0";
+                  document.getElementById("bcom-specialization").style.bottom = "25px";
                 }
               }
 
-              function functionSub(){
-                var semester = document.getElementById("semester");
-                var subject = document.getElementById("subject");
-                var BcomSpec = document.getElementById("bcom-specialization");
-                var searchButton = document.getElementById("button-container");
-
-                subject.style.opacity = 1;
-                subject.style.paddingBottom = "50px";
-                searchButton.style.opacity = 1;
-                if(BcomSpec.style.opacity == 1)
+              function functionSub(isBcomCourseSpec){
+                document.getElementById("niv2").disabled = false;
+                document.getElementById("subject").style.opacity = 1;
+                document.getElementById("subject").style.top = "25px";
+                document.getElementById("button-container").style.opacity = 1;
+                if(document.getElementById("bcom-specialization").style.opacity == 0)
+                  document.getElementById("button-container").style.top = "-30px";
+                else
+                  document.getElementById("button-container").style.top = "55px";
+                if(document.getElementById("bcom-specialization").style.opacity == 1)
                 {
-                  BcomSpec.style.opacity = 0;
-                  BcomSpec.style.paddingBottom = "-50px";
+                  console.log("function executed");
+                  document.getElementById("niv3").disabled = true;
+                  document.getElementById("bcom-specialization").style.opacity = "0";
+                  document.getElementById("bcom-specialization").style.bottom = "25px";
                 }
+                if(isBcomCourseSpec == "true")
+                  functionBcomSpec();
+                if(document.getElementById("bcom-specialization").style.opacity == 0)
+                  document.getElementById("button-container").style.top = "-30px";
               }
 
               function functionBcomSpec(){
-                var subject = document.getElementById("subject");
-                var BcomSpec = document.getElementById("bcom-specialization");
-
-                BcomSpec.style.opacity = 1;
-                BcomSpec.style.paddingBottom = "50px";
+                document.getElementById("niv3").disabled = false;
+                document.getElementById("bcom-specialization").style.opacity = 1;
+                document.getElementById("bcom-specialization").style.top = "35px";
+                document.getElementById("button-container").style.top = "50px";
               }
           </SCRIPT>
           <DIV class="as-console-wrapper"><DIV class="as-console"></DIV></DIV>
