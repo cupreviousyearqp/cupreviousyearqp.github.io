@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+  <HTML>
+    <HEAD>
+      <TITLE>Calicut University Previous Year Question Paper</TITLE>
+      <LINK rel="stylesheet" href="style.css"/>
+      <LINK rel="icon" href="images/logo.png"/>
+      <LINK rel="preconnect" href="https://fonts.googleapis.com"/><!--These 3 links are copied from google fonts-->
+      <LINK rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <LINK href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"/>
+      <LINK rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/><!--Imported from bootstrapcdn. Not really, you pulled this out from a random stack overflow site that you will never remeber again :0-->
+      <SCRIPT src="script.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+      <!--Header-->
+      <SECTION class="header">
+        <DIV class="text-box">
+          <H1>Calicut University Previous Year Question Papers</H1>
+          <A href="#dropdown" class="hero-btn">Browse Question Papers</A>
+        </DIV>
+      </SECTION>
+
+      <!--Main-->
+      <SECTION class="main">
+        <SCRIPT src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></SCRIPT>
+        <LINK href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+          <DIV class="dropdown" id="dropdown">
+              <SELECT data-child="niv1" class="selectdata form-control custom-select">
+                  <OPTION value="1-1" onclick="functionSem()">BA ENGLISH LANGUAGE AND LITERATURE</OPTION>
+                  <OPTION value="1-2" onclick="functionSem()">BACHELOR OF BUSINESS ADMINISTRATION</OPTION>
+                  <OPTION value="1-3" onclick="functionSem()">BACHELOR OF COMPUTER APPLICATION</OPTION>
+                  <OPTION value="1-4" onclick="functionSem()">B.Sc COMPUTER SCIENCE</OPTION>
+                  <OPTION value="1-5" onclick="functionSem()">B.Com COMPUTER APPLICATION</OPTION>
+                  <OPTION value="1-6" onclick="functionSem()">Mcom Finance</OPTION>
+                  <OPTION value="1-7" onclick="functionSem()">MA English Language & Literature</OPTION>
+              </SELECT>
+          </DIV>
+
+          <DIV class="semester" id="semester">
+              <SELECT id="niv1" data-child="niv2" class="selectdata form-control custom-select" disabled="true">
+                  <OPTION data-group="1-1" value="1-1-1" onclick="functionSub()" disabled="true">Semester 1</OPTION>
+                  <OPTION data-group="1-1" value="1-1-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-1" value="1-1-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-1" value="1-1-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-1" value="1-1-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-1" value="1-1-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-1" value="1-1-7" onclick="functionSub()">Electives</OPTION>
+                  <OPTION data-group="1-1" value="1-1-8" onclick="functionSub()">Complementary Courses</OPTION>
+                  <OPTION data-group="1-1" value="1-1-9" onclick="functionSub()">Open Courses</OPTION>
+
+
+                  <OPTION data-group="1-2" value="1-2-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-2" value="1-2-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-2" value="1-2-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-2" value="1-2-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-2" value="1-2-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-2" value="1-2-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-2" value="1-2-7" onclick="functionSub()">Complementary Courses</OPTION>
+                  <OPTION data-group="1-2" value="1-2-8" onclick="functionSub()">Open Courses</OPTION>
+
+                  <OPTION data-group="1-3" value="1-3-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-3" value="1-3-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-3" value="1-3-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-3" value="1-3-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-3" value="1-3-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-3" value="1-3-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-3" value="1-3-7" onclick="functionSub()">Electives</OPTION>
+                  <OPTION data-group="1-3" value="1-3-8" onclick="functionSub()">Languages</OPTION>
+                  <OPTION data-group="1-3" value="1-3-9" onclick="functionSub()">Open Course</OPTION>
+
+                  <OPTION data-group="1-4" value="1-4-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-4" value="1-4-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-4" value="1-4-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-4" value="1-4-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-4" value="1-4-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-4" value="1-4-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-4" value="1-4-7" onclick="functionSub()">Electives</OPTION>
+                  <OPTION data-group="1-4" value="1-4-8" onclick="functionSub()">Languages</OPTION>
+                  <OPTION data-group="1-4" value="1-4-9" onclick="functionSub()">Open Course</OPTION>
+
+                  <OPTION data-group="1-5" value="1-5-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-5" value="1-5-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-5" value="1-5-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-5" value="1-5-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-5" value="1-5-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-5" value="1-5-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-5" value="1-5-7" onclick="functionSub()">Languages</OPTION>
+                  <OPTION data-group="1-5" value="1-5-8" onclick="functionSub('true')">Courses in Specialization</OPTION>
+                  <OPTION data-group="1-5" value="1-5-9" onclick="functionSub()">Open Courses</OPTION>
+
+
+                  <OPTION data-group="1-6" value="1-6-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-6" value="1-6-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-6" value="1-6-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-6" value="1-6-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-6" value="1-6-5" onclick="functionSub()">Electives</OPTION>
+
+                  <OPTION data-group="1-7" value="1-7-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-7" value="1-7-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-7" value="1-7-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-7" value="1-7-4" onclick="functionSub()">Semester 4</OPTION>
+              </SELECT>
+          </DIV>
+
+          <DIV class="subject" id="subject">
+              <SELECT id="niv2" data-child="niv3" class="selectdata form-control custom-select">
+                  <OPTION data-group="1-1-1" value="1-1-1-1" disabled="true">INTRODUCING LITERATURE</OPTION>
+                  <OPTION data-group="1-1-2" value="1-1-2-1">APPRECIATING POETRY</OPTION>
+                  <OPTION data-group="1-1-3" value="1-1-3-1">APPRECIATING PROSE</OPTION>
+                  <OPTION data-group="1-1-3" value="1-1-3-2">ENGLISH GRAMMAR AND USAGE</OPTION>
+                  <OPTION data-group="1-1-4" value="1-1-4-1">APPRECIATING FICTION</OPTION>
+                  <OPTION data-group="1-1-4" value="1-1-4-2">APPRECIATING DRAMA AND THEATRE</OPTION>
+                  <OPTION data-group="1-1-5" value="1-1-5-1">LITERARY THEORY</OPTION>
+                  <OPTION data-group="1-1-5" value="1-1-5-2">INDIAN WRITING IN ENGLISH</OPTION>
+                  <OPTION data-group="1-1-6" value="1-1-6-1">VOICES OF WOMEN</OPTION>
+                  <OPTION data-group="1-1-6" value="1-1-6-2">CLASSICS OF WORLD LITERATURE</OPTION>
+                  <OPTION data-group="1-1-6" value="1-1-6-3">FILM STUDIES</OPTION>
+                  <OPTION data-group="1-1-6" value="1-1-6-4">NEW LITERATURES IN ENGLISH</OPTION>
+                  <OPTION data-group="1-1-7" value="1-1-7-1">LITERATURE OF THE MARGINALIZED</OPTION>
+                  <OPTION data-group="1-1-7" value="1-1-7-2">DIGITAL LITERATURE AND ENGLISH</OPTION>
+                  <OPTION data-group="1-1-7" value="1-1-7-3">WRITING FOR THE MEDIA</OPTION>
+                  <OPTION data-group="1-1-7" value="1-1-7-4">TRANSLATION STUDIES</OPTION>
+                  <OPTION data-group="1-1-7" value="1-1-7-5">ENGLISH LANGUAGE EDUCATION</OPTION>
+                  <OPTION data-group="1-1-8" value="1-1-8-1">HISTORY OF ENGLISH LITERATURE – I</OPTION>
+                  <OPTION data-group="1-1-8" value="1-1-8-2">HISTORY OF ENGLISH LITERATURE – II</OPTION>
+                  <OPTION data-group="1-1-8" value="1-1-8-3">APPRECIATING DRAMA</OPTION>
+                  <OPTION data-group="1-1-8" value="1-1-8-4">ASPECTS OF ORAL AND INTERPERSONAL COMMUNICATION</OPTION>
+                  <OPTION data-group="1-1-8" value="1-1-8-5">ASPECTS OF READING AND WRITING</OPTION>
+                  <OPTION data-group="1-1-9" value="1-1-9-1">ENGLISH FOR COMPETITIVE EXAMINATIONS</OPTION>
+                  <OPTION data-group="1-1-9" value="1-1-9-2">CREATIVE WRITING IN ENGLISH</OPTION>
+                  <OPTION data-group="1-1-9" value="1-1-9-3">APPRECIATING LITERATURE</OPTION>
+
+                  <OPTION data-group="1-2-1" value="1-2-1-1">Management Theory and Practices</OPTION>
+                  <OPTION data-group="1-2-2" value="1-2-2-1">Financial Accounting</OPTION>
+                  <OPTION data-group="1-2-2" value="1-2-2-2">Marketing Management</OPTION>
+                  <OPTION data-group="1-2-3" value="1-2-3-1">Basic Numerical Methods</OPTION>
+                  <OPTION data-group="1-2-3" value="1-2-3-2">Professional Business Skills</OPTION>
+                  <OPTION data-group="1-2-3" value="1-2-3-3">Corporate Accounting</OPTION>
+                  <OPTION data-group="1-2-3" value="1-2-3-4">Financial Management</OPTION>
+                  <OPTION data-group="1-2-4" value="1-2-4-1">Entrepreneurship Development </OPTION>
+                  <OPTION data-group="1-2-4" value="1-2-4-2">Banking and Insurance</OPTION>
+                  <OPTION data-group="1-2-4" value="1-2-4-3">Cost & Management Accounting</OPTION>
+                  <OPTION data-group="1-2-5" value="1-2-5-1">Human Resources Management </OPTION>
+                  <OPTION data-group="1-2-5" value="1-2-5-2">Business Research Methods</OPTION>
+                  <OPTION data-group="1-2-5" value="1-2-5-3">Operations Management</OPTION>
+                  <OPTION data-group="1-2-6" value="1-2-6-1">Organisational Behaviour</OPTION>
+                  <OPTION data-group="1-2-6" value="1-2-6-2">Management Science</OPTION>
+                  <OPTION data-group="1-2-6" value="1-2-6-3">Project Management</OPTION>
+                  <OPTION data-group="1-2-7" value="1-2-7-1">Managerial Economics</OPTION>
+                  <OPTION data-group="1-2-7" value="1-2-7-2">Business Regulations</OPTION>
+                  <OPTION data-group="1-2-7" value="1-2-7-3">Corporate Regulations</OPTION>
+                  <OPTION data-group="1-2-7" value="1-2-7-4">Quantitative Techniques for Business</OPTION>
+                  <OPTION data-group="1-2-8" value="1-2-8-1">Tourism Management</OPTION>
+                  <OPTION data-group="1-2-8" value="1-2-8-2">Ecommerce</OPTION>
+                  <OPTION data-group="1-2-8" value="1-2-8-3">Business Organisation and Communication</OPTION>
+
+                  <OPTION data-group="1-3-1" value="1-3-1-1">Computer Fundamentals & HTML</OPTION>
+                  <OPTION data-group="1-3-1" value="1-3-1-2">Mathematical Foundation for Computer Applications</OPTION>
+                  <OPTION data-group="1-3-1" value="1-3-1-3">Discrete Mathematics</OPTION>
+                  <OPTION data-group="1-3-2" value="1-3-2-1">Problem Solving using C</OPTION>
+                  <OPTION data-group="1-3-2" value="1-3-2-2">Programming Laboratory I: HTML and Programming in C</OPTION>
+                  <OPTION data-group="1-3-2" value="1-3-2-3">Financial and Management Accounting </OPTION>
+                  <OPTION data-group="1-3-2" value="1-3-2-4">Operations Research </OPTION>
+                  <OPTION data-group="1-3-3" value="1-3-3-1">Python Programming</OPTION>
+                  <OPTION data-group="1-3-3" value="1-3-3-2">Sensors and Transducers</OPTION>
+                  <OPTION data-group="1-3-3" value="1-3-3-3">Data Structures using C</OPTION>
+                  <OPTION data-group="1-3-3" value="1-3-3-4">Computer Oriented Numerical and Statistical Methods </OPTION>
+                  <OPTION data-group="1-3-3" value="1-3-3-5">Theory of Computation</OPTION>
+                  <OPTION data-group="1-3-4" value="1-3-4-1">Data Communication and Optical Fibers</OPTION>
+                  <OPTION data-group="1-3-4" value="1-3-4-2">Microprocessors-Architecture and Programming</OPTION>
+                  <OPTION data-group="1-3-4" value="1-3-4-3">Database Management System and RDBMS</OPTION>
+                  <OPTION data-group="1-3-4" value="1-3-4-4">Programming Laboratory II: Data Structures and RDBMS</OPTION>
+                  <OPTION data-group="1-3-4" value="1-3-4-5">E-Commerce </OPTION>
+                  <OPTION data-group="1-3-4" value="1-3-4-6">Computer Graphics</OPTION>
+                  <OPTION data-group="1-3-5" value="1-3-5-1">Computer Organization and Architecture</OPTION>
+                  <OPTION data-group="1-3-5" value="1-3-5-2">Java Programming</OPTION>
+                  <OPTION data-group="1-3-5" value="1-3-5-3">Web Programming Using PH</OPTION>
+                  <OPTION data-group="1-3-5" value="1-3-5-4">Principles of Software Engineering </OPTION>
+                  <OPTION data-group="1-3-6" value="1-3-6-5">Android Programming</OPTION>
+                  <OPTION data-group="1-3-6" value="1-3-6-6">Operating Systems</OPTION>
+                  <OPTION data-group="1-3-6" value="1-3-6-7">Computer Networks</OPTION>
+                  <OPTION data-group="1-3-6" value="1-3-6-8">Programming Laboratory III: Java and PHP Programming</OPTION>
+                  <OPTION data-group="1-3-6" value="1-3-6-9">Programming Laboratory IV: Android and Linux shell Programming</OPTION>
+                  <OPTION data-group="1-3-7" value="1-3-7-1">System Software</OPTION>
+                  <OPTION data-group="1-3-7" value="1-3-7-2">Machine Learning</OPTION>
+                  <OPTION data-group="1-3-7" value="1-3-7-3">Software Testing and Quality Assurance</OPTION>
+                  <OPTION data-group="1-3-7" value="1-3-7-4">Technical Writing</OPTION>
+                  <OPTION data-group="1-3-7" value="1-3-7-5">Fundamentals of Life Skill Education</OPTION>
+                  <OPTION data-group="1-3-8" value="1-3-8-1">Ways with Words</OPTION>
+                  <OPTION data-group="1-3-8" value="1-3-8-2">Zeitgeist</OPTION>
+                  <OPTION data-group="1-3-8" value="1-3-8-3">Academic Writing</OPTION>
+                  <OPTION data-group="1-3-8" value="1-3-8-4">Hindi</OPTION>
+                  <OPTION data-group="1-3-8" value="1-3-8-5">Malayalam</OPTION>
+                  <OPTION data-group="1-3-9" value="1-3-9-1">Introduction to Computers and Office Automation</OPTION>
+                  <OPTION data-group="1-3-9" value="1-3-9-2">Web Designing</OPTION>
+                  <OPTION data-group="1-3-9" value="1-3-9-3">Introduction to Problem Solving and C Programming</OPTION>
+                  <OPTION data-group="1-3-9" value="1-3-9-4">Introduction to Data Analysis using spread sheet</OPTION>
+
+                  <OPTION data-group="1-4-1" value="1-4-1-1">Computer Fundamentals & HTML</OPTION>
+                  <OPTION data-group="1-4-1" value="1-4-1-1">Complementary Mathematics I</OPTION>
+                  <OPTION data-group="1-4-1" value="1-4-1-1">Electronics</OPTION>
+                  <OPTION data-group="1-4-2" value="1-4-2-1">Problem Solving using C</OPTION>
+                  <OPTION data-group="1-4-2" value="1-4-2-1">Programming Laboratory I: HTML and Programming in C</OPTION>
+                  <OPTION data-group="1-4-2" value="1-4-2-1">Complementary Mathematics II</OPTION>
+                  <OPTION data-group="1-4-2" value="1-4-2-1">Electronic Devices</OPTION>
+                  <OPTION data-group="1-4-3" value="1-4-3-1">Python Programming</OPTION>
+                  <OPTION data-group="1-4-3" value="1-4-3-1">Sensors and Transducers</OPTION>
+                  <OPTION data-group="1-4-3" value="1-4-3-1">Data Structures using C</OPTION>
+                  <OPTION data-group="1-4-3" value="1-4-3-1">Complementary Mathematics III </OPTION>
+                  <OPTION data-group="1-4-3" value="1-4-3-1">Digital Electronics</OPTION>
+                  <OPTION data-group="1-4-4" value="1-4-4-1">Data Communication and Optical Fibers</OPTION>
+                  <OPTION data-group="1-4-4" value="1-4-4-1">Microprocessors-Architecture and Programming</OPTION>
+                  <OPTION data-group="1-4-4" value="1-4-4-1">Database Management System and RDBMS</OPTION>
+                  <OPTION data-group="1-4-4" value="1-4-4-1">Programming Laboratory II: Data Structures and RDBMS</OPTION>
+                  <OPTION data-group="1-4-4" value="1-4-4-1">Complementary Mathematics IV</OPTION>
+                  <OPTION data-group="1-4-4" value="1-4-4-1">Electronics</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-5-1">Computer Organization and Architecture</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-5-1">Java Programming</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-5-1">Web Programming Using PHP</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-6-1">Principles of Software Engineering</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-6-1">Android Programming</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-6-1">Operating Systems</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-6-1">Computer Networks</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-6-1">Programming Laboratory III: Java and PHP Programming</OPTION>
+                  <OPTION data-group="1-4-5" value="1-4-6-1">Programming Laboratory IV: Android and Linux shell Programming</OPTION>
+                  <OPTION data-group="1-4-6" value="1-4-7-1">System Software</OPTION>
+                  <OPTION data-group="1-4-6" value="1-4-7-1">Machine Learning</OPTION>
+                  <OPTION data-group="1-4-6" value="1-4-7-1">Discrete Structures</OPTION>
+                  <OPTION data-group="1-4-6" value="1-4-7-1">Computer Graphics</OPTION>
+                  <OPTION data-group="1-4-6" value="1-4-7-1">Technical Writing</OPTION>
+                  <OPTION data-group="1-4-6" value="1-4-7-1">Fundamentals of Life Skill Education</OPTION>
+                  <OPTION data-group="1-4-7" value="1-4-8-1">Ways with Words</OPTION>
+                  <OPTION data-group="1-4-7" value="1-4-8-2">Zeitgeist</OPTION>
+                  <OPTION data-group="1-4-7" value="1-4-8-3">Academic Writing</OPTION>
+                  <OPTION data-group="1-4-7" value="1-4-8-4">Hindi</OPTION>
+                  <OPTION data-group="1-4-7" value="1-4-8-5">Malayalam</OPTION>
+                  <OPTION data-group="1-4-8" value="1-4-9-1">Introduction to Computers and Office Automation</OPTION>
+                  <OPTION data-group="1-4-8" value="1-4-9-2">Web Designing</OPTION>
+                  <OPTION data-group="1-4-8" value="1-4-9-3">Introduction to Problem Solving and C Programming</OPTION>
+                  <OPTION data-group="1-4-8" value="1-4-9-4">Introduction to Data Analysis using spread sheet</OPTION>
+
+                  <OPTION data-group="1-5-1" value="1-5-1-1">Business Management</OPTION>
+                  <OPTION data-group="1-5-1" value="1-5-1-2">Managerial Economics</OPTION>
+                  <OPTION data-group="1-5-2" value="1-5-2-1">Financial Accounting</OPTION>
+                  <OPTION data-group="1-5-2" value="1-5-2-2">Marketing Management</OPTION>
+                  <OPTION data-group="1-5-3" value="1-5-3-1">Basic Numerical Methods</OPTION>
+                  <OPTION data-group="1-5-3" value="1-5-3-2">Professional Business Skills</OPTION>
+                  <OPTION data-group="1-5-3" value="1-5-3-3">Business regulation</OPTION>
+                  <OPTION data-group="1-5-3" value="1-5-3-4">Corporate Accounting </OPTION>
+                  <OPTION data-group="1-5-3" value="1-5-3-5">Human Resources Management</OPTION>
+                  <OPTION data-group="1-5-4" value="1-5-4-1">Entrepreneurship Development </OPTION>
+                  <OPTION data-group="1-5-4" value="1-5-4-2">Banking and Insurance</OPTION>
+                  <OPTION data-group="1-5-4" value="1-5-4-3">Cost Accounting</OPTION>
+                  <OPTION data-group="1-5-4" value="1-5-4-4">Corporate Regulations </OPTION>
+                  <OPTION data-group="1-5-4" value="1-5-4-5">Quantitative Techniques for Business</OPTION>
+                  <OPTION data-group="1-5-5" value="1-5-5-1">Accounting for Management </OPTION>
+                  <OPTION data-group="1-5-5" value="1-5-5-2">Business Research Methods</OPTION>
+                  <OPTION data-group="1-5-5" value="1-5-5-3">Income Tax Law and Accounts</OPTION>
+                  <OPTION data-group="1-5-6" value="1-5-6-1">Income Tax and GST</OPTION>
+                  <OPTION data-group="1-5-6" value="1-5-6-2">Auditing and Corporate Governance</OPTION>
+                  <OPTION data-group="1-5-7" value="1-5-7-3">Ways with Words</OPTION>
+                  <OPTION data-group="1-5-7" value="1-5-7-4">Zeitgeist</OPTION>
+                  <OPTION data-group="1-5-7" value="1-5-7-6">Academic Writing</OPTION>
+                  <OPTION data-group="1-5-7" value="1-5-7-7">Hindi</OPTION>
+                  <OPTION data-group="1-5-7" value="1-5-7-8">Malayalam</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-1" onclick="functionBcomSpec()">Finance</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-2" onclick="functionBcomSpec()">Banking and Insurance</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-3" onclick="functionBcomSpec()">Co-operation</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-4" onclick="functionBcomSpec()">Computer Applications</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-5" onclick="functionBcomSpec()">Travel and Tourism</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-6" onclick="functionBcomSpec()">Islamic Finance</OPTION>
+                  <OPTION data-group="1-5-9" value="1-5-9-1">E-Commerce</OPTION>
+                  <OPTION data-group="1-5-9" value="1-5-9-2">Basics of Entrepreneurship and Management</OPTION>
+                  <OPTION data-group="1-5-9" value="1-5-9-3">Basic Accounting</OPTION>
+
+                  <OPTION data-group="1-6-1" value="1-6-1-1">Business Environment</OPTION>
+                  <OPTION data-group="1-6-1" value="1-6-1-2">Quantitative Techniques for Business Decisions</OPTION>
+                  <OPTION data-group="1-6-1" value="1-6-1-3">Management Accounting</OPTION>
+                  <OPTION data-group="1-6-1" value="1-6-1-4">Financial Reporting </OPTION>
+                  <OPTION data-group="1-6-1" value="1-6-1-5">Organisation Management</OPTION>
+                  <OPTION data-group="1-6-2" value="1-6-2-1">International Business</OPTION>
+                  <OPTION data-group="1-6-2" value="1-6-2-2">Advanced Financial Reporting</OPTION>
+                  <OPTION data-group="1-6-2" value="1-6-2-3">Business Taxation</OPTION>
+                  <OPTION data-group="1-6-2" value="1-6-2-4">Advanced Management Accounting</OPTION>
+                  <OPTION data-group="1-6-2" value="1-6-2-5">Project and Relationship Management</OPTION>
+                  <OPTION data-group="1-6-3" value="1-6-3-1">Financial Market and Institutions</OPTION>
+                  <OPTION data-group="1-6-3" value="1-6-3-2">Business Communication</OPTION>
+                  <OPTION data-group="1-6-3" value="1-6-3-3">Research Methodology</OPTION>
+                  <OPTION data-group="1-6-4" value="1-6-4-1">Management Science</OPTION>
+                  <OPTION data-group="1-6-4" value="1-6-4-2">Strategic Management</OPTION>
+                  <OPTION data-group="1-6-5" value="1-6-5-1">Financial Strategy</OPTION>
+                  <OPTION data-group="1-6-5" value="1-6-5-2">Security Analysis and Portfolio Management</OPTION>
+                  <OPTION data-group="1-6-5" value="1-6-5-3">Risk Management</OPTION>
+                  <OPTION data-group="1-6-5" value="1-6-5-4">Tax Planning and Management</OPTION>
+
+                  <OPTION data-group="1-7-1" value="1-7-1-1">British Literature from Chaucer to 18th century</OPTION>
+                  <OPTION data-group="1-7-1" value="1-7-1-2">British Literature - 19th century</OPTION>
+                  <OPTION data-group="1-7-1" value="1-7-1-3">History of English Language </OPTION>
+                  <OPTION data-group="1-7-1" value="1-7-1-4">Indian Literature in English</OPTION>
+                  <OPTION data-group="1-7-2" value="1-7-2-1">Twentieth century British Literature up to 1940</OPTION>
+                  <OPTION data-group="1-7-2" value="1-7-2-2">Literary Criticism and Theory - Part 1</OPTION>
+                  <OPTION data-group="1-7-2" value="1-7-2-3">American Literature</OPTION>
+                  <OPTION data-group="1-7-2" value="1-7-2-4">Postcolonial writings</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-1">Twentieth century British Literature post 1940</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-2">Literary Criticism and Theory - Part 2</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-3">Shakespeare Studies</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-4">European Fiction in Translation</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-5">Women’s Writing</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-6">Introduction to Linguistics</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-7">Introduction to Cultural Studies</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-8">Teaching of English</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-9">World Drama</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-10">Latino Literature</OPTION>
+                  <OPTION data-group="1-7-3" value="1-7-3-11">American Ethnic Writing</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-1">English Literature in the 21st Century</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-2">Film Studies</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-3">Queer Studies</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-4">Literature and Ecology</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-5">Regional Indian Literature in Translation</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-6">Indian English Fiction</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-7">Introduction to Children’s Literature</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-8">Dalit Studies</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-9">Writings from the Middle East</OPTION>
+                  <OPTION data-group="1-7-4" value="1-7-4-10">Malayalam Literature in English Translation</OPTION>
+              </SELECT>
+          </DIV>
+
+          <DIV class="bcom-specialization" id="bcom-specialization" >
+              <SELECT id="niv3" class="selectdata form-control custom-select" disabled=true>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-1" >Financial Markets and Services</OPTION>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-2">Financial Management</OPTION>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-3">Fundamentals of Investments</OPTION>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-4">Financial Derivatives</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-1">Banking Services Management</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-2">Insurance Management</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-3">Foreign Exchange Management</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-4">Risk Management and Insurance</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-1">Co-operative Theory and Practice</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-2">Legal Environment For Co-operatives</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-3">International Co-operative Movement</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-4">Co-operative Management and Administration</OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-1">Computer Applications in Business </OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-2">Business Information Systems</OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-3">Office Automation Tools</OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-4">Computerized Accounting with Tally</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-1">Tourism Principles And Practices</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-2">Tourism Product And Promotion</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-3">Tourist Transport And Tour Operation</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-4">Hospitality Management</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-1">Introduction to Islamic Commercial Banking</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-2">Fundamentals of Islamic Commercial Law</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-3">Foundations of Islamic Accounting Theory and Practice</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-4">Islamic Investment Funds and Insurance</OPTION>
+              </SELECT>
+          </DIV>
+
+          <SCRIPT type="text/javascript">
+              document.getElementById("niv1").disabled = true;
+              document.getElementById("niv2").disabled = true;
+              document.getElementById("niv3").disabled = true;
+
+
+              $("[data-child]").change(function() {
+                const selectedGroup = $(this).val();
+                var $childSelect = $("#" + $(this).attr("data-child"));
+                value = $childSelect.find('option').hide()
+                .filter(function (i, e) {
+                  return $(e).val().startsWith(selectedGroup)
+                }).show().eq(0).val();
+                $childSelect.val(value);
+                $childSelect.trigger('change');
+              });
+
+              $("[data-child]").eq(0).trigger('change');
+
+              function functionSem(){
+                document.getElementById("niv1").disabled = false;
+                document.getElementById("semester").style.opacity = 1;
+                document.getElementById("semester").style.top = "12.5px"
+                if(document.getElementById("bcom-specialization").style.opacity == 1)
+                {
+                  console.log("function executed");
+                  document.getElementById("niv3").disabled = true;
+                  document.getElementById("bcom-specialization").style.opacity = "0";
+                  document.getElementById("bcom-specialization").style.bottom = "25px";
+                }
+              }
+
+              function functionSub(isBcomCourseSpec){
+                document.getElementById("niv2").disabled = false;
+                document.getElementById("subject").style.opacity = 1;
+                document.getElementById("subject").style.top = "25px";
+                document.getElementById("button-container").style.opacity = 1;
+                if(document.getElementById("bcom-specialization").style.opacity == 0)
+                  document.getElementById("button-container").style.top = "-30px";
+                else
+                  document.getElementById("button-container").style.top = "55px";
+                if(document.getElementById("bcom-specialization").style.opacity == 1)
+                {
+                  console.log("function executed");
+                  document.getElementById("niv3").disabled = true;
+                  document.getElementById("bcom-specialization").style.opacity = "0";
+                  document.getElementById("bcom-specialization").style.bottom = "25px";
+                }
+                if(isBcomCourseSpec == "true")
+                  functionBcomSpec();
+                if(document.getElementById("bcom-specialization").style.opacity == 0)
+                  document.getElementById("button-container").style.top = "-30px";
+              }
+
+              function functionBcomSpec(){
+                document.getElementById("niv3").disabled = false;
+                document.getElementById("bcom-specialization").style.opacity = 1;
+                document.getElementById("bcom-specialization").style.top = "35px";
+                document.getElementById("button-container").style.top = "50px";
+              }
+          </SCRIPT>
+          <DIV class="as-console-wrapper"><DIV class="as-console"></DIV></DIV>
+
+          <DIV class="button-container" id="button-container">
+            <A href="intro_page.html">Search Papers</A>
+          </DIV>
+      </SECTION>
+      <!--Footer-->
+      <SECTION class="footer">
+        <H4>About Us</H4>
+        <P>Created by the people for the people.</P>
+
+           <DIV class="icons">
+             <I class="fa fa-facebook"></I>
+             <I class="fa fa-twitter"></I>
+             <I class="fa fa-instagram"></I>
+             <I class="fa fa-linkedin"></I>
+           </DIV>
+      </SECTION>
+    </BODY>
+  </HTML>
