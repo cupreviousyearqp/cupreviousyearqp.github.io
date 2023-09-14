@@ -66,7 +66,8 @@
 .dropdown{
   display: flex;
   justify-content: center;
-  padding-bottom: -100px;
+  padding-bottom: -50px;
+
 }
 
 .dropdown select{
@@ -84,8 +85,9 @@
 .semester{
   display: flex;
   justify-content: center;
-  padding-bottom: -100px;
+  padding-bottom: -50px;
   transition: 1s;
+  opacity: 0;
 }
 
 .semester select{
@@ -103,8 +105,9 @@
 .subject{
   display: flex;
   justify-content: center;
-  padding-bottom: -100px;
+  padding-bottom: -50px;
   transition: 1s;
+  opacity: 0;
 }
 
 .subject select{
@@ -117,6 +120,47 @@
   z-index: 2;
   padding: 10px;
   font-size: 20px;
+}
+
+.bcom-specialization{
+  display: flex;
+  justify-content: center;
+  padding-bottom: -50px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.bcom-specialization select{
+  text-align: center;
+  border: 2px solid #FA6520;
+  margin: 10px 0px 20px 0px;
+  width: 930px;
+  border-radius: 10px;
+  background-color: #FFF8F0;
+  z-index: 2;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.button-container a{
+  border: 2px solid #FA6520;
+  padding: 10px 30px;
+  color: #FA6520;
+  transition: 0.25s;
+}
+
+.button-container a:hover{
+  border: 2px solid #00CC66;
+  background-color: #00CC66;
+  padding: 10px 30px;
+  color: #F1F1F1;
+  text-decoration: none;
 }
 
 /*footer*/

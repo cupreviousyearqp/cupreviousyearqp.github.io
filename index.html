@@ -16,116 +16,93 @@
       <SECTION class="header">
         <DIV class="text-box">
           <H1>Calicut University Previous Year Question Papers</H1>
-          <A href="#niv1" class="hero-btn">Browse Question Papers</A>
+          <A href="#dropdown" class="hero-btn">Browse Question Papers</A>
         </DIV>
       </SECTION>
 
       <!--Main-->
       <SECTION class="main">
-        <!--<DIV class="dropdown" id="dropdown">
-          <SELECT  id="courseSelectBox" onchange="changeSemesterGuide()">
-            <OPTION value="BA">BA ENGLISH LANGUAGE AND LITERATURE</OPTION>
-            <OPTION value="BBA">BACHELOR OF BUSINESS ADMINISTRATION</OPTION>
-            <OPTION value="BCA">BACHELOR OF COMPUTER APPLICATION</OPTION>
-            <OPTION value="BSC">B.Sc COMPUTER SCIENCE</OPTION>
-            <OPTION value="BCOM">B.Com COMPUTER APPLICATION</OPTION>
-            <OPTION value="MCOM">Mcom Finance</OPTION>
-            <OPTION value="MA">MA English Language & Literature</OPTION>
-          </SELECT>
-        </DIV>
-
-        <DIV class="semester" id="semester" onchange="changeSubjectGuide()">
-          <SELECT id="semesterSelectBox">
-
-          </SELECT>
-        </DIV>
-
-        <DIV class="subject" id="subject">
-          <SELECT id="subjectSelectBox">
-
-          </SELECT>
-        </DIV>-->
         <SCRIPT src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></SCRIPT>
         <LINK href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
-          <DIV class="dropdown">
+          <DIV class="dropdown" id="dropdown">
               <SELECT data-child="niv1" class="selectdata form-control custom-select">
-                  <OPTION value="1-1">BA ENGLISH LANGUAGE AND LITERATURE</OPTION>
-                  <OPTION value="1-2">BACHELOR OF BUSINESS ADMINISTRATION</OPTION>
-                  <OPTION value="1-3">BACHELOR OF COMPUTER APPLICATION</OPTION>
-                  <OPTION value="1-4">B.Sc COMPUTER SCIENCE</OPTION>
-                  <OPTION value="1-5">B.Com COMPUTER APPLICATION</OPTION>
-                  <OPTION value="1-6">Mcom Finance</OPTION>
-                  <OPTION value="1-7">MA English Language & Literature</OPTION>
+                  <OPTION value="1-1" onclick="functionSem()">BA ENGLISH LANGUAGE AND LITERATURE</OPTION>
+                  <OPTION value="1-2" onclick="functionSem()">BACHELOR OF BUSINESS ADMINISTRATION</OPTION>
+                  <OPTION value="1-3" onclick="functionSem()">BACHELOR OF COMPUTER APPLICATION</OPTION>
+                  <OPTION value="1-4" onclick="functionSem()">B.Sc COMPUTER SCIENCE</OPTION>
+                  <OPTION value="1-5" onclick="functionSem()">B.Com COMPUTER APPLICATION</OPTION>
+                  <OPTION value="1-6" onclick="functionSem()">Mcom Finance</OPTION>
+                  <OPTION value="1-7" onclick="functionSem()">MA English Language & Literature</OPTION>
               </SELECT>
           </DIV>
 
-          <DIV class="semester">
+          <DIV class="semester" id="semester">
               <SELECT id="niv1" data-child="niv2" class="selectdata form-control custom-select">
-                  <OPTION data-group="1-1" value="1-1-1">Semester 1</OPTION>
-                  <OPTION data-group="1-1" value="1-1-2">Semester 2</OPTION>
-                  <OPTION data-group="1-1" value="1-1-3">Semester 3</OPTION>
-                  <OPTION data-group="1-1" value="1-1-4">Semester 4</OPTION>
-                  <OPTION data-group="1-1" value="1-1-5">Semester 5</OPTION>
-                  <OPTION data-group="1-1" value="1-1-6">Semester 6</OPTION>
-                  <OPTION data-group="1-1" value="1-1-7">Electives</OPTION>
-                  <OPTION data-group="1-1" value="1-1-8">Complementary Courses</OPTION>
-                  <OPTION data-group="1-1" value="1-1-9">Open Courses</OPTION>
+                  <OPTION data-group="1-1" value="1-1-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-1" value="1-1-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-1" value="1-1-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-1" value="1-1-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-1" value="1-1-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-1" value="1-1-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-1" value="1-1-7" onclick="functionSub()">Electives</OPTION>
+                  <OPTION data-group="1-1" value="1-1-8" onclick="functionSub()">Complementary Courses</OPTION>
+                  <OPTION data-group="1-1" value="1-1-9" onclick="functionSub()">Open Courses</OPTION>
 
 
-                  <OPTION data-group="1-2" value="1-2-1">Semester 1</OPTION>
-                  <OPTION data-group="1-2" value="1-2-2">Semester 2</OPTION>
-                  <OPTION data-group="1-2" value="1-2-3">Semester 3</OPTION>
-                  <OPTION data-group="1-2" value="1-2-4">Semester 4</OPTION>
-                  <OPTION data-group="1-2" value="1-2-5">Semester 5</OPTION>
-                  <OPTION data-group="1-2" value="1-2-6">Semester 6</OPTION>
-                  <OPTION data-group="1-2" value="1-2-7">Complementary Courses</OPTION>
-                  <OPTION data-group="1-2" value="1-2-8">Open Courses</OPTION>
+                  <OPTION data-group="1-2" value="1-2-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-2" value="1-2-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-2" value="1-2-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-2" value="1-2-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-2" value="1-2-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-2" value="1-2-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-2" value="1-2-7" onclick="functionSub()">Complementary Courses</OPTION>
+                  <OPTION data-group="1-2" value="1-2-8" onclick="functionSub()">Open Courses</OPTION>
 
-                  <OPTION data-group="1-3" value="1-3-1">Semester 1</OPTION>
-                  <OPTION data-group="1-3" value="1-3-2">Semester 2</OPTION>
-                  <OPTION data-group="1-3" value="1-3-3">Semester 3</OPTION>
-                  <OPTION data-group="1-3" value="1-3-4">Semester 4</OPTION>
-                  <OPTION data-group="1-3" value="1-3-5">Semester 5</OPTION>
-                  <OPTION data-group="1-3" value="1-3-6">Semester 6</OPTION>
-                  <OPTION data-group="1-3" value="1-3-7">Electives</OPTION>
-                  <OPTION data-group="1-3" value="1-3-8">Languages</OPTION>
-                  <OPTION data-group="1-3" value="1-3-9">Open Course</OPTION>
+                  <OPTION data-group="1-3" value="1-3-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-3" value="1-3-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-3" value="1-3-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-3" value="1-3-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-3" value="1-3-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-3" value="1-3-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-3" value="1-3-7" onclick="functionSub()">Electives</OPTION>
+                  <OPTION data-group="1-3" value="1-3-8" onclick="functionSub()">Languages</OPTION>
+                  <OPTION data-group="1-3" value="1-3-9" onclick="functionSub()">Open Course</OPTION>
 
-                  <OPTION data-group="1-4" value="1-4-1">Semester 1</OPTION>
-                  <OPTION data-group="1-4" value="1-4-2">Semester 2</OPTION>
-                  <OPTION data-group="1-4" value="1-4-3">Semester 3</OPTION>
-                  <OPTION data-group="1-4" value="1-4-4">Semester 4</OPTION>
-                  <OPTION data-group="1-4" value="1-4-5">Semester 5</OPTION>
-                  <OPTION data-group="1-4" value="1-4-6">Semester 6</OPTION>
-                  <OPTION data-group="1-4" value="1-4-7">Electives</OPTION>
-                  <OPTION data-group="1-4" value="1-4-8">Languages</OPTION>
-                  <OPTION data-group="1-4" value="1-4-9">Open Course</OPTION>
+                  <OPTION data-group="1-4" value="1-4-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-4" value="1-4-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-4" value="1-4-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-4" value="1-4-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-4" value="1-4-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-4" value="1-4-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-4" value="1-4-7" onclick="functionSub()">Electives</OPTION>
+                  <OPTION data-group="1-4" value="1-4-8" onclick="functionSub()">Languages</OPTION>
+                  <OPTION data-group="1-4" value="1-4-9" onclick="functionSub()">Open Course</OPTION>
 
-                  <OPTION data-group="1-5" value="1-5-1">Semester 1</OPTION>
-                  <OPTION data-group="1-5" value="1-5-2">Semester 2</OPTION>
-                  <OPTION data-group="1-5" value="1-5-3">Semester 3</OPTION>
-                  <OPTION data-group="1-5" value="1-5-4">Semester 4</OPTION>
-                  <OPTION data-group="1-5" value="1-5-5">Semester 5</OPTION>
-                  <OPTION data-group="1-5" value="1-5-6">Semester 6</OPTION>
-                  <OPTION data-group="1-5" value="1-5-7">Languages</OPTION>
-                  <OPTION data-group="1-5" value="1-5-8">Courses in Specialization</OPTION>
-                  <OPTION data-group="1-5" value="1-5-9">Open Courses</OPTION>
+                  <OPTION data-group="1-5" value="1-5-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-5" value="1-5-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-5" value="1-5-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-5" value="1-5-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-5" value="1-5-5" onclick="functionSub()">Semester 5</OPTION>
+                  <OPTION data-group="1-5" value="1-5-6" onclick="functionSub()">Semester 6</OPTION>
+                  <OPTION data-group="1-5" value="1-5-7" onclick="functionSub()">Languages</OPTION>
+                  <OPTION data-group="1-5" value="1-5-8" onclick="functionSub(); functionBcomSpec()">Courses in Specialization</OPTION>
+                  <OPTION data-group="1-5" value="1-5-9" onclick="functionSub()">Open Courses</OPTION>
 
 
-                  <OPTION data-group="1-6" value="1-6-1">Semester 1</OPTION>
-                  <OPTION data-group="1-6" value="1-6-2">Semester 2</OPTION>
-                  <OPTION data-group="1-6" value="1-6-3">Semester 3</OPTION>
-                  <OPTION data-group="1-6" value="1-6-4">Semester 4</OPTION>
-                  <OPTION data-group="1-6" value="1-6-5">Electives</OPTION>
+                  <OPTION data-group="1-6" value="1-6-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-6" value="1-6-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-6" value="1-6-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-6" value="1-6-4" onclick="functionSub()">Semester 4</OPTION>
+                  <OPTION data-group="1-6" value="1-6-5" onclick="functionSub()">Electives</OPTION>
 
-                  <OPTION data-group="1-7" value="1-7-1">Semester 1</OPTION>
-                  <OPTION data-group="1-7" value="1-7-2">Semester 2</OPTION>
-                  <OPTION data-group="1-7" value="1-7-3">Semester 3</OPTION>
-                  <OPTION data-group="1-7" value="1-7-4">Semester 4</OPTION>
+                  <OPTION data-group="1-7" value="1-7-1" onclick="functionSub()">Semester 1</OPTION>
+                  <OPTION data-group="1-7" value="1-7-2" onclick="functionSub()">Semester 2</OPTION>
+                  <OPTION data-group="1-7" value="1-7-3" onclick="functionSub()">Semester 3</OPTION>
+                  <OPTION data-group="1-7" value="1-7-4" onclick="functionSub()">Semester 4</OPTION>
               </SELECT>
           </DIV>
 
-          <DIV class="subject">
+          <DIV class="subject" id="subject">
               <SELECT id="niv2" data-child="niv3" class="selectdata form-control custom-select">
                   <OPTION data-group="1-1-1" value="1-1-1-1">INTRODUCING LITERATURE</OPTION>
                   <OPTION data-group="1-1-2" value="1-1-2-1">APPRECIATING POETRY</OPTION>
@@ -286,12 +263,12 @@
                   <OPTION data-group="1-5-7" value="1-5-7-6">Academic Writing</OPTION>
                   <OPTION data-group="1-5-7" value="1-5-7-7">Hindi</OPTION>
                   <OPTION data-group="1-5-7" value="1-5-7-8">Malayalam</OPTION>
-                  <OPTION data-group="1-5-8" value="1-5-8-1">Finance</OPTION>
-                  <OPTION data-group="1-5-8" value="1-5-8-2">Banking and Insurance</OPTION>
-                  <OPTION data-group="1-5-8" value="1-5-8-3">Co-operation</OPTION>
-                  <OPTION data-group="1-5-8" value="1-5-8-4">Computer Applications</OPTION>
-                  <OPTION data-group="1-5-8" value="1-5-8-5">Travel and Tourism</OPTION>
-                  <OPTION data-group="1-5-8" value="1-5-8-6">Islamic Finance</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-1" onclick="functionBcomSpec()">Finance</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-2" onclick="functionBcomSpec()">Banking and Insurance</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-3" onclick="functionBcomSpec()">Co-operation</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-4" onclick="functionBcomSpec()">Computer Applications</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-5" onclick="functionBcomSpec()">Travel and Tourism</OPTION>
+                  <OPTION data-group="1-5-8" value="1-5-8-6" onclick="functionBcomSpec()">Islamic Finance</OPTION>
                   <OPTION data-group="1-5-9" value="1-5-9-1">E-Commerce</OPTION>
                   <OPTION data-group="1-5-9" value="1-5-9-2">Basics of Entrepreneurship and Management</OPTION>
                   <OPTION data-group="1-5-9" value="1-5-9-3">Basic Accounting</OPTION>
@@ -348,6 +325,35 @@
               </SELECT>
           </DIV>
 
+          <DIV class="bcom-specialization" id="bcom-specialization">
+              <SELECT id="niv3" class="selectdata form-control custom-select">
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-1">Financial Markets and Services</OPTION>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-2">Financial Management</OPTION>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-3">Fundamentals of Investments</OPTION>
+                  <OPTION data-group="1-5-8-1" value="1-5-8-1-4">Financial Derivatives</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-1">Banking Services Management</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-2">Insurance Management</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-3">Foreign Exchange Management</OPTION>
+                  <OPTION data-group="1-5-8-2" value="1-5-8-2-4">Risk Management and Insurance</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-1">Co-operative Theory and Practice</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-2">Legal Environment For Co-operatives</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-3">International Co-operative Movement</OPTION>
+                  <OPTION data-group="1-5-8-3" value="1-5-8-3-4">Co-operative Management and Administration</OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-1">Computer Applications in Business </OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-2">Business Information Systems</OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-3">Office Automation Tools</OPTION>
+                  <OPTION data-group="1-5-8-4" value="1-5-8-4-4">Computerized Accounting with Tally</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-1">Tourism Principles And Practices</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-2">Tourism Product And Promotion</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-3">Tourist Transport And Tour Operation</OPTION>
+                  <OPTION data-group="1-5-8-5" value="1-5-8-5-4">Hospitality Management</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-1">Introduction to Islamic Commercial Banking</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-2">Fundamentals of Islamic Commercial Law</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-3">Foundations of Islamic Accounting Theory and Practice</OPTION>
+                  <OPTION data-group="1-5-8-6" value="1-5-8-6-4">Islamic Investment Funds and Insurance</OPTION>
+              </SELECT>
+          </DIV>
+
           <SCRIPT type="text/javascript">
               $("[data-child]").change(function() {
                 const selectedGroup = $(this).val();
@@ -361,8 +367,51 @@
               });
 
               $("[data-child]").eq(0).trigger('change');
+
+              function functionSem(){
+                var dropdown = document.getElementById("dropdown");
+                var semester = document.getElementById("semester");
+                var BcomSpec = document.getElementById("bcom-specialization");
+
+                dropdown.style.paddingBottom = "50px";
+                semester.style.opacity = 1;
+                semester.style.paddingBottom = "50px";
+                if(BcomSpec.style.opacity == 1)
+                {
+                  BcomSpec.style.opacity = 0;
+                  BcomSpec.style.paddingBottom = "-50px";
+                }
+              }
+
+              function functionSub(){
+                var semester = document.getElementById("semester");
+                var subject = document.getElementById("subject");
+                var BcomSpec = document.getElementById("bcom-specialization");
+                var searchButton = document.getElementById("button-container");
+
+                subject.style.opacity = 1;
+                subject.style.paddingBottom = "50px";
+                searchButton.style.opacity = 1;
+                if(BcomSpec.style.opacity == 1)
+                {
+                  BcomSpec.style.opacity = 0;
+                  BcomSpec.style.paddingBottom = "-50px";
+                }
+              }
+
+              function functionBcomSpec(){
+                var subject = document.getElementById("subject");
+                var BcomSpec = document.getElementById("bcom-specialization");
+
+                BcomSpec.style.opacity = 1;
+                BcomSpec.style.paddingBottom = "50px";
+              }
           </SCRIPT>
           <DIV class="as-console-wrapper"><DIV class="as-console"></DIV></DIV>
+
+          <DIV class="button-container" id="button-container">
+            <A href="intro_page.html">Search Papers</A>
+          </DIV>
       </SECTION>
       <!--Footer-->
       <SECTION class="footer">
