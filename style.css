@@ -153,14 +153,15 @@
   top: 0px;
 }
 
-.button-container a{
+.button-container button{
   border: 2px solid #FA6520;
   padding: 10px 30px;
   color: #FA6520;
   transition: 0.25s;
+  background: none;
 }
 
-.button-container a:hover{
+.button-container button:hover:enabled{
   border: 2px solid #00CC66;
   background-color: #00CC66;
   padding: 10px 30px;

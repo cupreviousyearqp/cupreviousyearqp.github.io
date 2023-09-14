@@ -37,7 +37,7 @@
 
           <DIV class="semester" id="semester">
               <SELECT id="niv1" data-child="niv2" class="selectdata form-control custom-select" disabled="true">
-                  <OPTION data-group="1-1" value="1-1-1" onclick="functionSub()" disabled="true">Semester 1</OPTION>
+                  <OPTION data-group="1-1" value="1-1-1" onclick="functionSub()">Semester 1</OPTION>
                   <OPTION data-group="1-1" value="1-1-2" onclick="functionSub()">Semester 2</OPTION>
                   <OPTION data-group="1-1" value="1-1-3" onclick="functionSub()">Semester 3</OPTION>
                   <OPTION data-group="1-1" value="1-1-4" onclick="functionSub()">Semester 4</OPTION>
@@ -103,7 +103,7 @@
 
           <DIV class="subject" id="subject">
               <SELECT id="niv2" data-child="niv3" class="selectdata form-control custom-select">
-                  <OPTION data-group="1-1-1" value="1-1-1-1" disabled="true">INTRODUCING LITERATURE</OPTION>
+                  <OPTION data-group="1-1-1" value="1-1-1-1">INTRODUCING LITERATURE</OPTION>
                   <OPTION data-group="1-1-2" value="1-1-2-1">APPRECIATING POETRY</OPTION>
                   <OPTION data-group="1-1-3" value="1-1-3-1">APPRECIATING PROSE</OPTION>
                   <OPTION data-group="1-1-3" value="1-1-3-2">ENGLISH GRAMMAR AND USAGE</OPTION>
@@ -354,10 +354,10 @@
           </DIV>
 
           <SCRIPT type="text/javascript">
+              setTimeout(function onreadyButton(){document.getElementById("find-button").disabled = true;}, 50);
               document.getElementById("niv1").disabled = true;
               document.getElementById("niv2").disabled = true;
               document.getElementById("niv3").disabled = true;
-
 
               $("[data-child]").change(function() {
                 const selectedGroup = $(this).val();
@@ -378,7 +378,6 @@
                 document.getElementById("semester").style.top = "12.5px"
                 if(document.getElementById("bcom-specialization").style.opacity == 1)
                 {
-                  console.log("function executed");
                   document.getElementById("niv3").disabled = true;
                   document.getElementById("bcom-specialization").style.opacity = "0";
                   document.getElementById("bcom-specialization").style.bottom = "25px";
@@ -394,9 +393,9 @@
                   document.getElementById("button-container").style.top = "-30px";
                 else
                   document.getElementById("button-container").style.top = "55px";
+                document.getElementById("find-button").disabled = false;
                 if(document.getElementById("bcom-specialization").style.opacity == 1)
                 {
-                  console.log("function executed");
                   document.getElementById("niv3").disabled = true;
                   document.getElementById("bcom-specialization").style.opacity = "0";
                   document.getElementById("bcom-specialization").style.bottom = "25px";
@@ -412,12 +411,13 @@
                 document.getElementById("bcom-specialization").style.opacity = 1;
                 document.getElementById("bcom-specialization").style.top = "35px";
                 document.getElementById("button-container").style.top = "50px";
+                document.getElementById("find-button").disabled = false;
               }
           </SCRIPT>
           <DIV class="as-console-wrapper"><DIV class="as-console"></DIV></DIV>
 
           <DIV class="button-container" id="button-container">
-            <A href="intro_page.html">Search Papers</A>
+            <BUTTON id="find-button" href="intro_page.html" disabled="true">Search Papers</BUTTON>
           </DIV>
       </SECTION>
       <!--Footer-->
